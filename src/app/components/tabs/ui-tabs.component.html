@@ -1,0 +1,14 @@
+<div class="nav-tab-container light-mode">
+  <div class="nav-tabs-header">
+    <ul class="nav-tabs-header-menu">
+      <li *ngFor="let tab of tabs" (click)="selectTab(tab)" >
+        <a class="main-header-link" [class.is-active]="tab.active">
+          <ng-template *ngTemplateOutlet="tab.headerTplRef"></ng-template>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="nav-content-wrapper">
+    <ng-content></ng-content>
+  </div>
+</div>
