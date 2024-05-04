@@ -1,6 +1,14 @@
-
-.left-side {
+:host {
+  flex-shrink: 0;
   flex-basis: 240px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  overflow: auto;
+}
+
+.left-menu   {
+  display: block;
   border-right: 1px solid var(--border-color);
   padding: 26px;
   overflow: auto;
@@ -10,6 +18,7 @@
     display: none;
   }
 }
+
 
 .side-wrapper+.side-wrapper {
   margin-top: 20px;
